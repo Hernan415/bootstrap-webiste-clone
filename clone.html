@@ -4,14 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Landing Page</title>
+  <title>Bootstrap-The most popular</title>
   <!-- BOOTSTRAP -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- CUSTOM -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <!-- NAVBAR -->
-    <nav class= "navbar navbar-expand navbar-light bg-light">
+    <nav class= "navbar navbar-expand navbar-light" style="background-color: #563d7c;">
       <div class="navbar-nav">
         <img src="logo.png" width="36" height="36" alt="">
         <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
@@ -22,24 +24,33 @@
         <a class="nav-item nav-link active" href="#">Expo</a>
         <a class="nav-item nav-link active" href="#">Blog</a>
       </div>
-      <div>
-        
-      </div>
+      <span class="navbar-text">
+        <img src="empty space.png" width="650" height="36"  alt="">
+        <a>v4.4</a>
+        <img src="github-icon.svg" width="30" height="30"  alt="">
+        <img src="twitter.png" width="30" height="30"  alt="">
+        <img src="slack-icon.png" width="30" height="30"  alt="">
+        <img src="open-collective.png" width="30" height="30"  alt="">
+        <a href="#" class="btn btn-outline-warning">Download</a>
+      </span>
     </nav>
 
 <!-- HERO -->
     <div class="container">
+      <br>
+      <br>
+      <br>
       <div class="row">
         <div class="card-group">
           <div class="card border-0">
             <div class="card-body">
-              <h1 class="card-title">Bootstrap</h1>
-              <h5 class="card-text">
+              <h1 class="mb-3 bd-text-purple-bright">Bootstrap</h1>
+              <h10 class="card-text">
                 <p>Build responsive, mobile-first projects on the web with the world’s most popular front-end component library.</p>
                 <p>Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype your ideas or build your entire app with our Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful plugins built on jQuery.</p>
-              </h5>
-              <a href="#" class="btn btn-primary">Get Started</a>
-              <a href="#" class="btn btn-primary">Download</a>
+              </h1>
+              <a href="#" class="btn btn-outline-primary btn-lg">Get Started</a>
+              <a href="#" class="btn btn-outline-primary btn-lg">Download</a>
             </div>
           </div>
           <div class="card  border-0">
@@ -49,7 +60,12 @@
           </div>
       </div>
     </div>
-
+    <!-- EMPTY-SPACE -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <!-- OTHERS -->
     <div class="card-group">
       <div class="card border-0">
@@ -62,7 +78,7 @@
           <hr>
           <p>$  gem install bootstrap -v 4.4.1</p>
           <hr>
-          <a href="#" class="btn btn-primary">Read installation docs</a>
+          <a href="#" class="btn btn-outline-primary">Read installation docs</a>
         </div>
       </div>
       <div class="card border-0">
@@ -71,7 +87,19 @@
           <h5 class="card-title">BootstrapCDN</h5>
           <p class="card-text">When you only need to include Bootstrap’s compiled CSS or JS, you can use BootstrapCDN.</p>
           <h5>CSS only</h5>
-          <a href="#" class="btn btn-primary">Explore the docs</a>
+          <div class="sidemenu">
+            <ul><a href=#home>link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"</a></ul>
+          </div>
+          <br>
+          <h5>JS, Popper.js, and jQuery</h5>
+          <div class="sidemenu">
+            <ul><a href=#home>script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script></a></ul>
+            <ul><a href=#home>script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script></a></ul>
+            <ul><a href=#home>script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script></ul>
+
+          </div>
+          <hr>
+          <a href="#" class="btn btn-outline-primary">Explore the docs</a>
         </div>
       </div>
       <div class="card border-0">
@@ -82,7 +110,7 @@
           <hr>
           <img src="bootstrap-themes.png" width="325" height="150" alt="">
           <hr>
-          <a href="#" class="btn btn-primary">Browse themes</a>
+          <a href="#" class="btn btn-outline-primary">Browse themes</a>
         </div>
       </div>
     </div>
